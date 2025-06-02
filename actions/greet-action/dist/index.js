@@ -25688,7 +25688,7 @@ async function run() {
     try {
         // Get input defined in action.yml
         const whoToGreet = core.getInput('who-to-greet', { required: true });
-        core.info(`Hello, ${whoToGreet}!`);
+        core.info(`Hello, ${whoToGreet}! version`);
         // Get the current time
         const time = new Date().toTimeString();
         core.setOutput('time', time);
