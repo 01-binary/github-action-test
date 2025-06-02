@@ -7,7 +7,7 @@ async function run(): Promise<void> {
     // Get input defined in action.yml
     const whoToGreet = core.getInput('who-to-greet', { required: true });
 
-    core.info(`Hello, ${whoToGreet}! version`);
+    core.info(`Hello, ${whoToGreet}! version1.0.2`);
 
     // Get the current time
     const time = new Date().toTimeString();
