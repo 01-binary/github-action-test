@@ -1,7 +1,7 @@
 # actions/goodbye-action/action.yml
 name: 'My Goodbye Action'
 description: 'A reusable GitHub Action that says goodbye.'
-author: 'Your Name/Org'
+author: 'jobisnvillains'
 
 inputs:
   who-to-say-goodbye:
@@ -16,7 +16,3 @@ outputs:
 runs:
   using: 'node20'
   main: 'dist/index.js' # Points to the compiled/packaged JS file within this action's directory
-
-branding:
-  icon: 'log-out'
-  color: 'orange'
