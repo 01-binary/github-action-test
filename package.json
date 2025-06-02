@@ -4,16 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:greet": "tsc --project actions/greet-action/tsconfig.json",
-    "package:greet": "ncc build actions/greet-action/src/main.ts -o actions/greet-action/dist --source-map --license licenses.txt",
-    "all:greet": "pnpm run build:greet && pnpm run package:greet",
-    "build:goodbye": "tsc --project actions/goodbye-action/tsconfig.json",
-    "package:goodbye": "ncc build actions/goodbye-action/src/main.ts -o actions/goodbye-action/dist --source-map --license licenses.txt",
-    "all:goodbye": "pnpm run build:goodbye && pnpm run package:goodbye",
-    "build": "pnpm run build:greet && pnpm run build:goodbye",
-    "package": "pnpm run package:greet && pnpm run package:goodbye",
-    "all": "pnpm run all:greet && pnpm run all:goodbye"
+    "package:greet": "ncc build actions/greet-action/src/main.ts -o actions/greet-action/dist --license licenses.txt",
+    "package:goodbye": "ncc build actions/goodbye-action/src/main.ts -o actions/goodbye-action/dist --license licenses.txt",
+    "package": "pnpm run package:greet && pnpm run package:goodbye"
   },
   "keywords": [],
   "author": "",
