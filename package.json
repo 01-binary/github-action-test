@@ -1,0 +1,32 @@
+{
+  "name": "github-action-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:greet": "tsc --project tsconfig.json --rootDir actions/greet-action/src --outDir actions/greet-action/dist",
+    "package:greet": "ncc build actions/greet-action/src/main.ts -o actions/greet-action/dist --source-map --license licenses.txt",
+    "all:greet": "pnpm run build:greet && pnpm run package:greet",
+    "build:goodbye": "tsc --project tsconfig.json --rootDir actions/goodbye-action/src --outDir actions/goodbye-action/dist",
+    "package:goodbye": "ncc build actions/goodbye-action/src/main.ts -o actions/goodbye-action/dist --source-map --license licenses.txt",
+    "all:goodbye": "pnpm run build:goodbye && pnpm run package:goodbye",
+    "build": "pnpm run build:greet && pnpm run build:goodbye",
+    "package": "pnpm run package:greet && pnpm run package:goodbye",
+    "all": "pnpm run all:greet && pnpm run all:goodbye"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.15.5+sha512.845196026aab1cc3f098a0474b64dfbab2afe7a1b4e91dd86895d8e4aa32a7a6d03049e2d0ad770bbe4de023a7122fb68c1a1d6e0d033c7076085f9d5d4800d4",
+  "devDependencies": {
+    "@types/node": "^22.15.24",
+    "@vercel/ncc": "^0.38.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+# action.yml
+name: 'My TypeScript Action'
+description: 'A reusable GitHub Action built with TypeScript and pnpm.'
+author: 'Your Name/Org'
+
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+
+outputs:
+  time:
+    description: 'The time of the greeting'
+
+runs:
+  using: 'node20' # Or 'node16' if preferred
+  main: 'dist/index.js' # Points to the compiled/packaged JS file
+
+branding:
+  icon: 'mic'
+  color: 'purple'
