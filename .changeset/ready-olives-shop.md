@@ -1,5 +1,0 @@
----
-"greet-action": patch
----
-
-Test
