@@ -1,8 +1,5 @@
 # Dependencies
 /node_modules
 
-# PNPM
-pnpm-lock.yaml
-
 # TypeScript build artifacts (excluding dist)
 *.tsbuildinfo
