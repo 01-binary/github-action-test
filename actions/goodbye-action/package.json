@@ -1,0 +1,7 @@
+{
+  "name": "goodbye-action",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "Reusable goodbye GitHub Action",
+  "author": "YOUR_NAME_OR_ORG"
+}

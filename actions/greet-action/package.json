@@ -1,0 +1,7 @@
+{
+  "name": "greet-action",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "Reusable greet GitHub Action",
+  "author": "YOUR_NAME_OR_ORG"
+}
