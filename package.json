@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:greet": "tsc --project tsconfig.json --rootDir actions/greet-action/src --outDir actions/greet-action/dist",
+    "build:greet": "tsc --project actions/greet-action/tsconfig.json",
     "package:greet": "ncc build actions/greet-action/src/main.ts -o actions/greet-action/dist --source-map --license licenses.txt",
     "all:greet": "pnpm run build:greet && pnpm run package:greet",
-    "build:goodbye": "tsc --project tsconfig.json --rootDir actions/goodbye-action/src --outDir actions/goodbye-action/dist",
+    "build:goodbye": "tsc --project actions/goodbye-action/tsconfig.json",
     "package:goodbye": "ncc build actions/goodbye-action/src/main.ts -o actions/goodbye-action/dist --source-map --license licenses.txt",
     "all:goodbye": "pnpm run build:goodbye && pnpm run package:goodbye",
     "build": "pnpm run build:greet && pnpm run build:goodbye",
