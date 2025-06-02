@@ -7,7 +7,7 @@ async function run(): Promise<void> {
     // Get input defined in action.yml
     const whoToGreet = core.getInput('who-to-greet', { required: true });
 
-    core.info(`Hello, ${whoToGreet}!`);
+    core.info(`Hello, ${whoToGreet}! version`);
 
     // Get the current time
     const time = new Date().toTimeString();
@@ -18,7 +18,6 @@ async function run(): Promise<void> {
     // core.info(`The event payload: ${payload}`);
 
     core.info('Action finished successfully!');
-
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);

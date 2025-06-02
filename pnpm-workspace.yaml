@@ -1,0 +1,5 @@
+packages:
+  # all packages in subdirs of actions
+  - 'actions/*'
+  # you can also include the root package if needed
+  # - '.'
